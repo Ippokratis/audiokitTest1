@@ -17,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8CB6DC1A2AB45EA400A37807 /* Hi-Hat_Open_808Flex.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = "Hi-Hat_Open_808Flex.aiff"; sourceTree = "<group>"; };
 		8CC338B32AB31D3300110D00 /* drums.exs */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.exs; sourceTree = "<group>"; };
 		8CD337762AB1A16A00FB90A7 /* audiokitExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = audiokitExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CD337792AB1A16A00FB90A7 /* audiokitExamplesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = audiokitExamplesApp.swift; sourceTree = "<group>"; };
@@ -60,7 +59,6 @@
 		8CD337782AB1A16A00FB90A7 /* audiokitExamples */ = {
 			isa = PBXGroup;
 			children = (
-				8CB6DC1A2AB45EA400A37807 /* Hi-Hat_Open_808Flex.aiff */,
 				8CC338B32AB31D3300110D00 /* drums.exs */,
 				8CD3378C2AB1A70300FB90A7 /* kick.wav */,
 				8CD3378B2AB1A6B900FB90A7 /* Sounds */,
