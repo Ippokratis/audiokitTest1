@@ -72,36 +72,35 @@ struct PressedButtonStyle: ButtonStyle
     let touchDown: () -> Void
     func makeBody(configuration: Self.Configuration) -> some View {
        
-        configuration.label
-            
-            .frame(width: 80, height: 80)
-            .background(
-                Group {
-                            if configuration.isPressed {
-                                RoundedRectangle(cornerRadius: 10)
-                                    //.fixedSize()
-                                    .fill(Color.offWhite)
-                                    .shadow(color: Color.black.opacity(0.2), radius: 2, x: 1, y: 1)
-                                    .shadow(color: Color.white.opacity(0.6), radius: 2, x: -1, y: -1)
-                            } else {
-                                RoundedRectangle(cornerRadius: 10)
-                                    //.fixedSize()
-                                    .fill(Color.offWhite)
-                                    .shadow(color: Color.black.opacity(0.2), radius: 5, x: 3, y: 3)
-                                    .shadow(color: Color.white.opacity(0.6), radius: 5, x: -3, y: -3)
-                            }
-                        }
-                
-            )
-            .foregroundColor(.darkGray)
-            .fontWeight(.bold)
-            .font(.system(size: 12))
-            .onChange(of: configuration.isPressed) {
-                if $0 {
-                    touchDown()
+    configuration.label
+        
+        .frame(width: 80, height: 80)
+        .background(
+            Group {
+                if configuration.isPressed {
+                    RoundedRectangle(cornerRadius: 10)
+                        //.fixedSize()
+                        .fill(Color.offWhite)
+                        .shadow(color: Color.black.opacity(0.2), radius: 2, x: 1, y: 1)
+                        .shadow(color: Color.white.opacity(0.6), radius: 2, x: -1, y: -1)
+                } else {
+                    RoundedRectangle(cornerRadius: 10)
+                        //.fixedSize()
+                        .fill(Color.offWhite)
+                        .shadow(color: Color.black.opacity(0.2), radius: 5, x: 3, y: 3)
+                        .shadow(color: Color.white.opacity(0.6), radius: 5, x: -3, y: -3)
                 }
-                
             }
+        )
+        .foregroundColor(.darkGray)
+        .fontWeight(.bold)
+        .font(.system(size: 12))
+        .onChange(of: configuration.isPressed) {
+            if $0 {
+                touchDown()
+            }
+            
+        }
     }
 }
 
