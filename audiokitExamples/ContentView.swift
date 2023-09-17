@@ -14,7 +14,6 @@ class Drum:ObservableObject
     let engine = AudioEngine()
     var instrument = AppleSampler()
     var audioFile: AVAudioFile?
-    @Published var playing = false
     let instrument1 = DrumInstrument( name:"kick", filename: "kick.wav")
     
     init()
@@ -47,23 +46,6 @@ extension Color {
 struct DrumInstrument {
     let name:String
     let filename:String
-    /*let audioFile: AVAudioFile?
-    
-    init() {
-        //engine.output = instrument
-        guard let url = Bundle.main.resourceURL?.appendingPathComponent(filename)
-        else {
-            return
-        }
-        
-        do {
-            audioFile = try AVAudioFile(forReading: url)
-        }
-        catch  {
-            Log("Could not load: \(filename)")
-        }
-    }
-     */
 }
     
 
@@ -99,17 +81,13 @@ struct PressedButtonStyle: ButtonStyle
             if $0 {
                 touchDown()
             }
-            
         }
     }
 }
 
 struct ContentView: View
 {
-    @StateObject var conductor = Drum()
-    @State private var pressing = true
-    //@State private var isPressed: Bool = false
-    @GestureState private var isPressed = false
+    var conductor = Drum()
     
     var body: some View
     {
@@ -120,10 +98,8 @@ struct ContentView: View
                 { x in
                     Button(action:{}){
                         Text("Kick")
-                        //  .font(.system(size: 14))
                     }.buttonStyle(PressedButtonStyle{ conductor.instrument.play() })
                 }
-                
             }
         }
         .edgesIgnoringSafeArea(.all)
