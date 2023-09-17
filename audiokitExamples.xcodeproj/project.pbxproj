@@ -12,8 +12,8 @@
 		8CD3377E2AB1A16B00FB90A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3377D2AB1A16B00FB90A7 /* Assets.xcassets */; };
 		8CD337812AB1A16B00FB90A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CD337802AB1A16B00FB90A7 /* Preview Assets.xcassets */; };
 		8CD3378A2AB1A1FE00FB90A7 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD337892AB1A1FE00FB90A7 /* AudioKit */; };
-		8CD3378E2AB1A70300FB90A7 /* kick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3378C2AB1A70300FB90A7 /* kick.wav */; };
-		8CD3378F2AB1A70300FB90A7 /* snare.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3378D2AB1A70300FB90A7 /* snare.wav */; };
+		8CD3378E2AB1A70300FB90A7 /* kick_C1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3378C2AB1A70300FB90A7 /* kick_C1.wav */; };
+		8CD3378F2AB1A70300FB90A7 /* snare_D1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 8CD3378D2AB1A70300FB90A7 /* snare_D1.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		8CD3377D2AB1A16B00FB90A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CD337802AB1A16B00FB90A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8CD337822AB1A16B00FB90A7 /* audiokitExamples.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = audiokitExamples.entitlements; sourceTree = "<group>"; };
-		8CD3378C2AB1A70300FB90A7 /* kick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick.wav; path = audiokitExamples/kick.wav; sourceTree = SOURCE_ROOT; };
-		8CD3378D2AB1A70300FB90A7 /* snare.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = snare.wav; path = Sounds/snare.wav; sourceTree = SOURCE_ROOT; };
+		8CD3378C2AB1A70300FB90A7 /* kick_C1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = kick_C1.wav; path = audiokitExamples/Sounds/kick_C1.wav; sourceTree = SOURCE_ROOT; };
+		8CD3378D2AB1A70300FB90A7 /* snare_D1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = snare_D1.wav; path = Sounds/snare_D1.wav; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				8CC338B32AB31D3300110D00 /* drums.exs */,
-				8CD3378C2AB1A70300FB90A7 /* kick.wav */,
 				8CD3378B2AB1A6B900FB90A7 /* Sounds */,
 				8CD337792AB1A16A00FB90A7 /* audiokitExamplesApp.swift */,
 				8CD3377B2AB1A16A00FB90A7 /* ContentView.swift */,
@@ -82,7 +81,8 @@
 		8CD3378B2AB1A6B900FB90A7 /* Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				8CD3378D2AB1A70300FB90A7 /* snare.wav */,
+				8CD3378D2AB1A70300FB90A7 /* snare_D1.wav */,
+				8CD3378C2AB1A70300FB90A7 /* kick_C1.wav */,
 			);
 			path = Sounds;
 			sourceTree = "<group>";
@@ -151,9 +151,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CD3378E2AB1A70300FB90A7 /* kick.wav in Resources */,
+				8CD3378E2AB1A70300FB90A7 /* kick_C1.wav in Resources */,
 				8CD337812AB1A16B00FB90A7 /* Preview Assets.xcassets in Resources */,
-				8CD3378F2AB1A70300FB90A7 /* snare.wav in Resources */,
+				8CD3378F2AB1A70300FB90A7 /* snare_D1.wav in Resources */,
 				8CD3377E2AB1A16B00FB90A7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
